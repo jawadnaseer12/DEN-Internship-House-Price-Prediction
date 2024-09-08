@@ -18,8 +18,8 @@ try:
     print("\nData After Cleaning:")
     print(df.head())
 
-    X = df.drop('Price', axis=1)  # Features: Size, Bedroom, City, Location (encoded)
-    y = df['Price']  # Target: Price
+    X = df.drop('Price', axis=1) 
+    y = df['Price'] 
 
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
